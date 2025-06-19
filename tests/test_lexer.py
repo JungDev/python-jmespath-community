@@ -1,7 +1,7 @@
 from tests import unittest
 
-from jmespath_community import lexer
-from jmespath_community.exceptions import LexerError, EmptyExpressionError
+from jmespath_community_fs import lexer
+from jmespath_community_fs.exceptions import LexerError, EmptyExpressionError
 
 class LexerUtils(unittest.TestCase):
 

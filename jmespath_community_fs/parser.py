@@ -28,11 +28,11 @@ A few notes on the implementation.
 import random
 
 
-from jmespath_community import lexer
-from jmespath_community.compat import with_repr_method
-from jmespath_community import ast
-from jmespath_community import exceptions
-from jmespath_community import visitor
+from jmespath_community_fs import lexer
+from jmespath_community_fs.compat import with_repr_method
+from jmespath_community_fs import ast
+from jmespath_community_fs import exceptions
+from jmespath_community_fs import visitor
 
 
 class Parser(object):

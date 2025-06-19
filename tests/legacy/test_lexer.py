@@ -1,9 +1,9 @@
 from tests.legacy import unittest
 from tests import test_lexer
 
-from jmespath_community import lexer
-from jmespath_community.visitor import Options
-from jmespath_community.exceptions import LexerError
+from jmespath_community_fs import lexer
+from jmespath_community_fs.visitor import Options
+from jmespath_community_fs.exceptions import LexerError
 
 
 class TestLegacyRegexLexer(test_lexer.LexerUtils):

@@ -1,4 +1,4 @@
-from jmespath_community.compat import with_str_method
+from jmespath_community_fs.compat import with_str_method
 
 
 class JMESPathError(ValueError):

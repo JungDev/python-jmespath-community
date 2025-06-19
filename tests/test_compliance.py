@@ -5,7 +5,7 @@ from tests import json
 
 import pytest
 
-from jmespath_community.visitor import Options
+from jmespath_community_fs.visitor import Options
 
 
 TEST_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -92,7 +92,7 @@ def test_expression(given, expression, expected, filename):
     _compliance_tests('error')
 )
 def test_error_expression(given, expression, error, filename):
-    import jmespath_community.parser
+    import jmespath_community_fs.parser
     if error not in ('syntax', 'invalid-type', 'undefined-variable',
                      'unknown-function', 'invalid-arity', 'invalid-value'):
         raise RuntimeError("Unknown error type '%s'" % error)
@@ -116,8 +116,8 @@ def test_error_expression(given, expression, error, filename):
         raise AssertionError(error_msg)
 
 def _search_expression(given, expression, filename):
-    import jmespath_community as jmespath 
-    import jmespath_community.parser as parser 
+    import jmespath_community_fs as jmespath 
+    import jmespath_community_fs.parser as parser 
 
     options = LEGACY_OPTIONS \
         if filename.startswith('legacy') \

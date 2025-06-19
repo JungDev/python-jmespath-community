@@ -2,8 +2,8 @@ import string
 import warnings
 from json import loads
 
-from jmespath_community.visitor import Options
-from jmespath_community.exceptions import LexerError, EmptyExpressionError
+from jmespath_community_fs.visitor import Options
+from jmespath_community_fs.exceptions import LexerError, EmptyExpressionError
 
 
 class Lexer(object):

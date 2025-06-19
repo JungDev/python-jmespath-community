@@ -3,8 +3,8 @@ from tests import unittest
 from datetime import datetime, timedelta
 import json
 
-import jmespath_community as jmespath 
-from jmespath_community import exceptions
+import jmespath_community_fs as jmespath 
+from jmespath_community_fs import exceptions
 
 
 class TestFunctions(unittest.TestCase):

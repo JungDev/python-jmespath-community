@@ -1,5 +1,5 @@
 import sys
-from jmespath_community import ast
+from jmespath_community_fs import ast
 
 import unittest
 import json

@@ -3,13 +3,13 @@ import re
 import random
 import string
 import threading
-from jmespath_community.ast import arithmetic
+from jmespath_community_fs.ast import arithmetic
 from tests import unittest, OrderedDict
 
-from jmespath_community import parser
-from jmespath_community import visitor
-from jmespath_community import ast
-from jmespath_community import exceptions
+from jmespath_community_fs import parser
+from jmespath_community_fs import visitor
+from jmespath_community_fs import ast
+from jmespath_community_fs import exceptions
 
 
 class TestParser(unittest.TestCase):

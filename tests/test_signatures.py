@@ -1,8 +1,8 @@
 from tests import unittest
 
-from jmespath_community import compat
-from jmespath_community import exceptions
-from jmespath_community import functions
+from jmespath_community_fs import compat
+from jmespath_community_fs import exceptions
+from jmespath_community_fs import functions
 
 class TestFunctionSignatures(unittest.TestCase):
 
