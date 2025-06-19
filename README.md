@@ -51,7 +51,7 @@ structures. You can use `search` and give it the jmespath expression and
 the data:
 
 ``` python
->>> import jmespath
+>>> import jmespath_community_community as jmespath
 >>> path = jmespath.search('foo.bar', {'foo': {'bar': 'baz'}})
 'baz'
 ```
@@ -61,7 +61,7 @@ compile the JMESPath expression and use this parsed expression to
 perform repeated searches:
 
 ``` python
->>> import jmespath
+>>> import jmespath_community_community as jmespath
 >>> expression = jmespath.compile('foo.bar')
 >>> expression.search({'foo': {'bar': 'baz'}})
 'baz'
@@ -81,13 +81,13 @@ JMESPath expression is evaluated. The most common scenario for using an
 keys. To do this you can use either of these options:
 
 ``` python
->>> import jmespath
+>>> import jmespath_community_community as jmespath
 >>> jmespath.search('{a: a, b: b}',
 ...                 mydata,
 ...                 jmespath.Options(dict_cls=collections.OrderedDict))
 
 
->>> import jmespath
+>>> import jmespath_community_community as jmespath
 >>> parsed = jmespath.compile('{a: a, b: b}')
 >>> parsed.search(mydata,
 ...               jmespath.Options(dict_cls=collections.OrderedDict))
@@ -100,7 +100,7 @@ literal, but this was being deprecated following
 and its <span class="title-ref">raw-string</span> literal syntax.
 
 ``` python
->>> import jmespath
+>>> import jmespath_community_community as jmespath
 >>> jmespath.search("`foo`"', {})
 jmespath.exceptions.LexerError: Bad jmespath expression: Bad token %s `foo`:
 `foo`
@@ -113,14 +113,14 @@ opt-in to parse legacy syntax, by specifying the
 `enable_legacy_literals` flag to the `Options` object.
 
 ``` python
->>> import jmespath
+>>> import jmespath_community_community as jmespath
 >>> jmespath.search("`foo`"',
 ...                 mydata,
 ...                 jmespath.Options(enable_legacy_literals=True))
 'foo'
 
 
->>> import jmespath
+>>> import jmespath_community_community as jmespath
 >>> parsed = jmespath.compile("`foo`",
 ...               jmespath.Options(enable_legacy_literals=True))
 >>> parsed.search(mydata)
@@ -151,8 +151,8 @@ To create custom functions:
 Below are a few examples:
 
 ``` python
-import jmespath
-from jmespath import functions
+import jmespath_community_community as jmespath
+from jmespath_community_community import functions
 
 # 1. Create a subclass of functions.Functions.
 #    The function.Functions base class has logic
@@ -245,5 +245,6 @@ poetry run pytest
 
 # Discuss
 
-Join us on our [Gitter channel](https://gitter.im/jmespath/chat) if you
+This is my fork, for support use official channel: 
+[Gitter channel](https://gitter.im/jmespath/chat) if you
 want to chat or if you have any questions.

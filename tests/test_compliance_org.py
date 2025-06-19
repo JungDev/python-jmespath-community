@@ -9,7 +9,7 @@ from tests import json
 
 import pytest
 
-from jmespath.visitor import Options
+from jmespath_community.visitor import Options
 
 TEST_DIR = os.path.dirname(os.path.abspath(__file__))
 JMESPATH_ORG_DIR = os.path.join(TEST_DIR, 'jmespath.org')
@@ -115,7 +115,7 @@ def test_error_expression(given, expression, error, filename):
         raise AssertionError(error_msg)
 
 def _search_expression(given, expression, filename):
-    import jmespath.parser
+    import jmespath_community.parser
 
     options = LEGACY_OPTIONS
 

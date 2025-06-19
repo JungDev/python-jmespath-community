@@ -1,9 +1,9 @@
 import operator
 
-from jmespath import exceptions
-from jmespath import functions
-from jmespath.compat import string_type
-from jmespath.scope import ScopedChainDict
+from jmespath_community import exceptions
+from jmespath_community import functions
+from jmespath_community.compat import string_type
+from jmespath_community.scope import ScopedChainDict
 from numbers import Number
 
 

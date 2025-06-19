@@ -5,8 +5,8 @@ import json
 import argparse
 from pprint import pformat
 
-import jmespath
-from jmespath import exceptions
+import jmespath_community as jmespath
+from jmespath_community import exceptions
 
 
 def main():

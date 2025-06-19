@@ -1,7 +1,7 @@
 import unittest
 
-import jmespath
-from jmespath import functions
+import jmespath_community as jmespath 
+from jmespath_community import functions
 
 
 class CustomFunctions(functions.Functions):

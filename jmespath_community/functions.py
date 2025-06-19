@@ -5,11 +5,11 @@ from pydoc import resolve
 
 from collections import OrderedDict
 
-from jmespath import exceptions
-from jmespath.compat import get_methods
-from jmespath.compat import iteritems
-from jmespath.compat import map
-from jmespath.compat import string_type as STRING_TYPE
+from jmespath_community import exceptions
+from jmespath_community.compat import get_methods
+from jmespath_community.compat import iteritems
+from jmespath_community.compat import map
+from jmespath_community.compat import string_type as STRING_TYPE
 
 
 # python types -> jmespath types

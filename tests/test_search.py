@@ -2,8 +2,8 @@ import sys
 import decimal
 from tests import unittest, OrderedDict
 
-import jmespath
-import jmespath.functions
+import jmespath_community as jmespath
+import jmespath_community.functions
 
 
 class TestSearchOptions(unittest.TestCase):

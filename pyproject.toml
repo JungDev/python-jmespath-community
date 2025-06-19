@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "jmespath"
+name = "jmespath-community"
 version = "0.1.0"
 description = ""
 authors = ["Springcomp <springcomp@users.noreply.github.com>"]
