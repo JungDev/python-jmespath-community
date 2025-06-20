@@ -15,8 +15,3 @@ pytest-cov = "5"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
-[tool.poetry.source]
-name = "PyPi"
-url = "https://foo.bar/simple/"
-priority = "primary"
